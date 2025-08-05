@@ -1,0 +1,56 @@
+# Site settings
+title: laipidopterist
+email: none@example.com
+description: >-
+  None yet.
+baseurl: ""
+url: "https://laipidopterist.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugin configuration
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation menu items
+header_pages:
+  - about.md
+
+github_username: laipidopterist
+
+# Content configuration
+show_excerpts: true
+paginate: 5
+
+# Markdown processing
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Collections
+# collections:
+#   projects:
+#     output: true
+#     permalink: /:collection/:name/
+
+# Exclude files from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
